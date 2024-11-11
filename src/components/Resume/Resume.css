@@ -1,0 +1,68 @@
+.job-position-container{
+    padding: .1em;
+    background-color: #f8f7f1;
+}
+
+.job-position-box{
+    max-width: 400px ;
+    display: flex;
+    padding-left: 1em;
+}
+
+.job-position-header{
+    padding-bottom: 2em;
+}
+
+
+.job-position-box__description{
+    text-align: justify;
+}
+/* Shape */
+
+.left-shape{
+    width: 10%;
+}
+
+.solid-circle{
+    width: 13px;
+    height: 13px;
+    top:8%;
+}
+
+.outline-circle{
+    width: 30px;
+    height: 30px;
+    top: 8%;
+    border-style: dotted;
+}
+
+.vertical-line{
+    height: calc(100% - 30px);
+    top: 58%;
+    border: 1px dashed #000;
+}
+
+@media (max-width: 500px){
+    .job-position-box{
+        max-width: 320px;
+        padding-left: 1em;
+    }
+}
+
+@media (min-width: 768px){
+    .job-position-box__footer{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .job-position-header{
+        margin-bottom: 4em;
+    }
+
+
+    .job-container{
+        display: flex;
+        justify-content: end;
+    }
+}
