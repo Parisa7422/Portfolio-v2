@@ -1,6 +1,7 @@
 # Portfolio V2
 
 ## Overview
+This is a template version of my personal portfolio, designed to showcase my projects, skills, and experience in web development. I am actively working to add my projects and continuously update the portfolio to reflect my latest work.
 This is the latest version of my personal portfolio, designed to showcase my projects, skills, and experience in web development. This portfolio is built with modern technologies and a responsive design, ensuring an optimal experience for users across all devices. It features sections for about me, projects, contact information, and a gallery of my work.
 
 ## Features
@@ -39,6 +40,7 @@ This is the latest version of my personal portfolio, designed to showcase my pro
 ## Usage
 - Visit the live site (link available in GitHub Pages).
 - Browse through the different sections including **About Me** and **Projects**.
+- View live demos of my projects by clicking on the links provided in the **Projects** section.
 
 ## Project Structure
 - **index.html**: Main HTML page for the portfolio.
