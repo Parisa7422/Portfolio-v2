@@ -1,24 +1,54 @@
-.homepage{
-    /* navbar height is 56px */
+/* Main container */
+.homepage {
     height: calc(100vh - 56px);
-    background-image: linear-gradient(#fff, #f8f7f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#fff, #dcd5d3);
+    position: relative;
+    padding: 20px;
 }
 
-.homepage-banner-box img{
-    max-width: 100%;
-    max-height: 110%;
+/* Title styling at the top left */
+.homepage-header__title {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    color: #2E2E2E;
+    text-align: left;
+    margin: 0;
 }
 
-.homepage-banner-image{
+.header__subtitle{
+    color: #3c5431;
+    padding-top: 50px;
+}
+/* Centered image at the bottom */
+.homepage-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-banner-img {
+    max-width: 700px;
+    height: auto;
     object-fit: contain;
 }
 
-@media (min-width: 1200px){
-    .homepage-banner-image{
-        object-fit: none;
-    }
-
-    .homepage-header {
-        padding: 0 10em;
-    }
+/* Description positioned at the bottom right */
+.homepage-header__description {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: right;
+    margin: 0;
 }
+
+

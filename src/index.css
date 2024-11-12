@@ -10,7 +10,8 @@ body{
 }
 
 h1{
-    font-size: calc(2.8rem + 1.5vw);
+    font-size: calc(2.7rem + 1.5vw);
+    font-weight:500;
 }
 
 h2{
