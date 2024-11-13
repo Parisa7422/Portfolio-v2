@@ -4,13 +4,16 @@
     padding: 0;
 }
 
+
 body{
     background-color: rgb(255, 255, 255);
+    background: linear-gradient(#fff, #dcd5d3);
     overflow-x: hidden;
 }
 
 h1{
-    font-size: calc(2.8rem + 1.5vw);
+    font-size: calc(2.7rem + 1.5vw);
+    font-weight:500;
 }
 
 h2{
