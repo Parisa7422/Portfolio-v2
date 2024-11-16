@@ -1,22 +1,30 @@
+.about-section{
+    padding: .1em;
+    background-color: #fff;
+}
 .about-header__description{
     text-align: justify;
 }
 
 .card-container{
     background-color: #fff;
-    height: 30%;
+    height: 5.5rem;
 }
 
 .card-container__icon{
-    width: 55px;
+   min-width: 55px;
    padding: 15px;
 }
 
 
 .sample-container{
     width: 75%;
-    height: 100%;
-    margin: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.react-icons{
+    font-size: 2em;
 }
 
 @media (min-width: 768px){
