@@ -1,6 +1,7 @@
 .job-position-container{
     padding: .1em;
-    background-color: #f8f7f1;
+    background-color: #fff;
+    /* background: linear-gradient(#fff, #dcd5d3) */
 }
 
 .job-position-box{

@@ -31,20 +31,22 @@ const information = [
 
 function Contact() {
   return (
-    <div className="container flex-column">
-      <div className="header d-flex justify-content-center">
-        <h3 style={{ textAlign: "center" }}>
-          Let's make something amazing together
-        </h3>
-      </div>
-      <div className="social-media-container d-flex justify-content-center">
-        <ul className="d-flex p-2">
-          {information.map((item) => (
-            <a key={item.id} href={item.url}>
-              <img src={item.icon} style={{ width: "70%" }} />
-            </a>
-          ))}
-        </ul>
+    <div className="contact-section">
+      <div className="container flex-column">
+        <div className="header d-flex justify-content-center">
+          <h3 style={{ textAlign: "center" }}>
+            Let's make something amazing together
+          </h3>
+        </div>
+        <div className="social-media-container d-flex justify-content-center">
+          <ul className="d-flex p-2">
+            {information.map((item) => (
+              <a key={item.id} href={item.url}>
+                <img src={item.icon} style={{ width: "70%" }} />
+              </a>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
