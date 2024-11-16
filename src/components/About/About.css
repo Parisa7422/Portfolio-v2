@@ -1,6 +1,7 @@
 .about-section{
     padding: .1em;
     background-color: #fff;
+    position: relative;
 }
 .about-header__description{
     text-align: justify;
@@ -8,6 +9,7 @@
 
 .card-container{
     background-color: #fff;
+    max-width: 20rem;
     height: 5.5rem;
 }
 
@@ -21,10 +23,22 @@
     width: 75%;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 
 .react-icons{
     font-size: 2em;
+}
+
+.skills-container::before{
+    content: "";
+    background-color: #89baa1;
+    position: absolute; /* Stretches to the left */
+    top:0;
+    bottom: 0; /* Aligns to the bottom */
+    left: 0; /* Aligns to the left */
+    width: 40%; /* Adjust as needed to control its width */
+    z-index: 0;
 }
 
 @media (min-width: 768px){

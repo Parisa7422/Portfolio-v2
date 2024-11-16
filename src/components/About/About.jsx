@@ -80,8 +80,8 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="col-md-5 mt-5 mt-md-0 p-0">
-            <div className="sample-container d-flex flex-column justify-content-between align-items-center">
+          <div className="skills-container col-md-5 mt-5 mt-md-0">
+            <div className="sample-container d-flex flex-column justify-content-between align-items-start">
               {cards.map((item) => (
                 <Card
                   key={item.id}
