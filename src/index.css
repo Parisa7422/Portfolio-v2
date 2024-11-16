@@ -6,7 +6,7 @@
 
 
 body{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     background: linear-gradient(#fff, #dcd5d3);
     overflow-x: hidden;
 }
@@ -21,14 +21,14 @@ h2{
     font-weight: 700;
     letter-spacing: .05rem;
 }
-
     /************ BOOTSTRAP TAGS **********/
 
 .container{
-    margin: 6em auto;
+    margin: 8em auto;
     padding: 0 2em;
     display: flex;
 }
+
 .hr{
     width: 200px;
     height: 1px;
@@ -39,7 +39,7 @@ h2{
 
 @media (min-width: 1200px){
     .container{
-        padding: 0 8em;
+        padding: 0 6em;
     }
 }
 
