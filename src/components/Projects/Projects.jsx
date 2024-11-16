@@ -16,25 +16,27 @@ const projects = [
 ];
 function Projects() {
   return (
-    <div className="container">
-      <div className="projects-container w-100 d-flex flex-column">
-        <div className="projects-context d-flex flex-column">
-          <div className="projects-context__title">
-            <h2>My Latest Works</h2>
+    <div className="projects-container">
+      <div className="container">
+        <div className="w-100 d-flex flex-column">
+          <div className="projects-context d-flex flex-column">
+            <div className="projects-context__title">
+              <h2>My Latest Works</h2>
+            </div>
+            <div className="projects-context__description">
+              <span>Perfect solution for digital product</span>
+            </div>
           </div>
-          <div className="projects-context__description">
-            <span>Perfect solution for digital product</span>
+          <div className="slide-container mt-4 d-inline-flex rounded">
+            {projects.map((item) => (
+              <Slide
+                key={item.id}
+                title={item.title}
+                description={item.description}
+                src={item.src}
+              />
+            ))}
           </div>
-        </div>
-        <div className="slide-container mt-4 d-inline-flex rounded">
-          {projects.map((item) => (
-            <Slide
-              key={item.id}
-              title={item.title}
-              description={item.description}
-              src={item.src}
-            />
-          ))}
         </div>
       </div>
     </div>

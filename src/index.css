@@ -21,6 +21,11 @@ h2{
     font-weight: 700;
     letter-spacing: .05rem;
 }
+
+.contact-section, .footer-section{
+    background-color: #fff;
+    padding: .1em;
+}
     /************ BOOTSTRAP TAGS **********/
 
 .container{

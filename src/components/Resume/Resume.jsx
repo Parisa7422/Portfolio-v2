@@ -23,30 +23,21 @@ export default Resume;
 const information = [
   {
     id: 1,
-    jobPosition: "Visual Designer",
+    jobPosition: "Web Developer",
     description:
-      "A visual designer designs for a variety of platforms, which may include internet and internet sites, games, movies.",
-    companyName: "Self-Employed, Brisbane",
-    date: "Sep 2016 - Aug 2014",
+      "I developed and maintained frontend and backend functionalities using Laravel and PHP, managed databases with MySQL, and implemented secure user authentication with Laravel Passport. Using the Blade templating engine, I created responsive and dynamic interfaces. I collaborated with teams to improve website performance and user experience while utilizing Git and GitHub for version control and project management.",
+    companyName: "FlyGames, Turkey",
+    date: "Aug 2022 - May 2023",
     color: "success",
   },
   {
     id: 2,
-    jobPosition: "UI/UX Designer",
+    jobPosition: "Assistant IT Manager",
     description:
-      "User interface design or user interface enginnering is the design of user interfaces for machines and software.",
-    companyName: "New Man Services",
-    date: "Jan 17 - Mar 2018",
+      "I developed kitchen appliance projects using C# for software solutions, maintained servers to ensure stability and security, and resolved hardware issues to enhance system performance and reduce downtime.",
+    companyName: "Rubino, Iran",
+    date: "Feb 2017 - Feb 2022",
     color: "danger",
-  },
-  {
-    id: 3,
-    jobPosition: "Sr. Product Designer",
-    description:
-      "Find product Photography Canada, Large selection. always Sale. Cheap Prices. Full Offer. Save Online.",
-    companyName: "Global Solution",
-    date: "Feb 2019 - Mar 2020",
-    color: "warning",
   },
 ];
 
