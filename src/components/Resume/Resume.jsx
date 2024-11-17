@@ -3,7 +3,7 @@ function Resume() {
   return (
     <div className="job-position-container">
       <div className="container flex-column">
-        <h2 className="pb-5">My Work Experiences</h2>
+        <h2 className="pb-5">My Career Milestones</h2>
         {information.map((item) => (
           <JobPosition
             key={item.id}
@@ -61,7 +61,7 @@ function JobPosition({ jobPosition, description, companyName, date, color }) {
             {description}
           </span>
         </div>
-        <div className="job-position-box__footer">
+        <div className="job-position-box__footer mb-5">
           <span className="job-position-box__company-name mt-4">
             <h6 className="">{companyName}</h6>
           </span>

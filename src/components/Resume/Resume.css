@@ -27,19 +27,19 @@
 .solid-circle{
     width: 13px;
     height: 13px;
-    top:8%;
+    top:4%;
 }
 
 .outline-circle{
     width: 30px;
     height: 30px;
-    top: 8%;
+    top: 4%;
     border-style: dotted;
 }
 
 .vertical-line{
     height: calc(100% - 30px);
-    top: 58%;
+    top: 54%;
     border: 1px dashed #000;
 }
 

@@ -29,10 +29,11 @@ h2{
     /************ BOOTSTRAP TAGS **********/
 
 .container{
-    margin: 6em auto;
+    margin: 8em auto;
     padding: 0 2em;
     display: flex;
     max-width: 90%;
+    
 }
 
 .hr{
