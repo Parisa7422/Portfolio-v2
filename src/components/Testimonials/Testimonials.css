@@ -7,8 +7,7 @@
 }
 
 .comment-box{
-    width: 300px;
-    height: 250px;
+    min-height: 300px;
 }
 
 .comment-image{
