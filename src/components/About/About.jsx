@@ -48,13 +48,14 @@ const cards = [
 function About() {
   return (
     <div className="about-section">
+      <div className="skills-container"></div>
       <div className="container">
         <div className="row flex-md-row-reverse">
           <div className="col-md-7">
             <div className="about-section d-flex flex-column h-100 mb-4">
               <div className="about-header h-75">
                 <h2>A Little About Me</h2>
-                <div className="about-header__description">
+                <div className="about-header__description pt-xxl-5">
                   I’m passionate about coding, designing beautiful and
                   functional applications, and always eager to learn new
                   technologies. When I’m not coding, I enjoy playing sports,
@@ -64,7 +65,7 @@ function About() {
                   solving problems and creating meaningful digital experiences.
                 </div>
               </div>
-              <div className="counter d-flex justify-content-between">
+              <div className="counter d-flex justify-content-between pt-4">
                 <div className="counter-projects d-flex flex-column-reverse">
                   <div className="counter-projects__title">
                     Hours of Coding Completed
@@ -80,8 +81,9 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="skills-container col-md-5 mt-5 mt-md-0">
-            <div className="sample-container d-flex flex-column justify-content-between align-items-start">
+
+          <div className="col-md-5 mt-5 mt-md-0 d-flex ">
+            <div className="sample-container d-flex flex-column justify-content-between align-items-center align-items-md-start">
               {cards.map((item) => (
                 <Card
                   key={item.id}

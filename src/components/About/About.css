@@ -14,13 +14,14 @@
 }
 
 .card-container__icon{
-   min-width: 55px;
+   min-width: 60px;
+   min-height: 60px;
    padding: 15px;
 }
 
 
 .sample-container{
-    width: 75%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -30,20 +31,35 @@
     font-size: 2em;
 }
 
-.skills-container::before{
-    content: "";
-    background-color: #89baa1;
-    position: absolute; /* Stretches to the left */
-    top:0;
-    bottom: 0; /* Aligns to the bottom */
-    left: 0; /* Aligns to the left */
-    width: 40%; /* Adjust as needed to control its width */
-    z-index: 0;
+
+.skills-container {
+    background-color: #89baa1; /* Green background */
+    width: 40%; /* Adjust width as needed */
+    height: 100%; /* Make it full height */
+    position: absolute; /* Place behind the cards */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Ensure it appears behind the cards */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Transition for smooth removal */
+    opacity: 1;
+    visibility: visible;
 }
 
-@media (min-width: 768px){
+
+
+@media (max-width: 768px){
     .sample-container{
         width: 100%;
-        padding-right: 3em;
+    }
+ 
+   .skills-container{
+    opacity: 0; /* Smoothly transition to invisible */
+    visibility: hidden; /* Ensure element is not interactable */
+   }
+}
+
+@media (max-width: 990px){
+    .skills-container{
+        width: 43%;
     }
 }
