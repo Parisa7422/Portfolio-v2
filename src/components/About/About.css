@@ -14,6 +14,7 @@
 }
 
 .card-container__icon{
+    background: #3c5431;
    min-width: 60px;
    min-height: 60px;
    padding: 15px;
@@ -33,7 +34,7 @@
 
 
 .skills-container {
-    background-color: #89baa1; /* Green background */
+    background-color: #ff9b58; /* Green background */
     width: 40%; /* Adjust width as needed */
     height: 100%; /* Make it full height */
     position: absolute; /* Place behind the cards */

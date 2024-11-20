@@ -29,36 +29,38 @@ const projects = [
 ];
 function Projects() {
   return (
-    <div className="projects-container">
-      <div className="container">
-        <div className="w-100 d-flex flex-column">
-          <div className="projects-context d-flex flex-column">
-            <div className="projects-context__title">
-              <h2>Projects From My Coding Journey</h2>
+    <section id="projects">
+      <div className="projects-container">
+        <div className="container">
+          <div className="w-100 d-flex flex-column">
+            <div className="projects-context d-flex flex-column">
+              <div className="projects-context__title">
+                <h2>Projects From My Coding Journey</h2>
+              </div>
+              <div className="projects-context__description">
+                <span>
+                  These projects are part of my journey as a junior developer.
+                  I've been at it for a few years and love working with
+                  technologies like React and JavaScript. There's always more to
+                  learn, and I'm excited to keep growing and building!
+                </span>
+              </div>
             </div>
-            <div className="projects-context__description">
-              <span>
-                These projects are part of my journey as a junior developer.
-                I've been at it for a few years and love working with
-                technologies like React and JavaScript. There's always more to
-                learn, and I'm excited to keep growing and building!
-              </span>
+            <div className="slide-container mt-4 d-inline-flex rounded">
+              {projects.map((item) => (
+                <Slide
+                  key={item.id}
+                  title={item.title}
+                  description={item.description}
+                  src={item.src}
+                  url={item.url}
+                />
+              ))}
             </div>
-          </div>
-          <div className="slide-container mt-4 d-inline-flex rounded">
-            {projects.map((item) => (
-              <Slide
-                key={item.id}
-                title={item.title}
-                description={item.description}
-                src={item.src}
-                url={item.url}
-              />
-            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Projects;

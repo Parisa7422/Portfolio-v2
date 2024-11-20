@@ -16,24 +16,26 @@ const information = [
 
 function Contact() {
   return (
-    <div className="contact-section">
-      <div className="container flex-column">
-        <div className="header d-flex justify-content-center">
-          <h3 style={{ textAlign: "center" }}>
-            Let's make something amazing together
-          </h3>
-        </div>
-        <div className="social-media-container d-flex justify-content-center">
-          <ul className="d-flex p-2">
-            {information.map((item) => (
-              <a key={item.id} href={item.url} className="social-media-icon">
-                {item.icon}
-              </a>
-            ))}
-          </ul>
+    <section id="contact">
+      <div className="contact-section">
+        <div className="container flex-column">
+          <div className="header d-flex justify-content-center">
+            <h3 style={{ textAlign: "center" }}>
+              Let's make something amazing together
+            </h3>
+          </div>
+          <div className="social-media-container d-flex justify-content-center">
+            <ul className="d-flex p-2">
+              {information.map((item) => (
+                <a key={item.id} href={item.url} className="social-media-icon">
+                  {item.icon}
+                </a>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Contact;

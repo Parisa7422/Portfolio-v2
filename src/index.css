@@ -9,6 +9,7 @@ body{
     /* background-color: rgb(255, 255, 255); */
     background: linear-gradient(#fff, #dcd5d3);
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
@@ -20,8 +21,38 @@ h2{
     font-size: calc(1.4rem + .9vw);
     font-weight: 700;
     letter-spacing: .05rem;
+
 }
 
+
+/************ NAVBAR SECTION **********/
+.nav-link {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: #333; 
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #ff6600; 
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #ff6600;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
 /************ CONTACT SECTION **********/
 
 .contact-section, .footer-section{
@@ -31,12 +62,12 @@ h2{
 
 .social-media-icon {
     font-size: 3em;
-    color: #000000; /* Change this to the desired color */
+    color: #000000; 
     transition: color 0.3s;
   }
   
   .social-media-icon:hover {
-    color: #347949; /* Optional: Change the color when hovered */
+    color: #ff6600; 
   }
 
 
