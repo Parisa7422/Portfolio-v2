@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <div className="footer-section d-flex flex-column align-items-center mb-4 pb-3">
+    <div className="footer-section d-flex flex-column align-items-center  pb-3">
       <hr className="w-75" />
-      <span>Design by ME</span>
+      <span>A personal creation by Parisa Tahery</span>
     </div>
   );
 }

@@ -11,7 +11,6 @@ function Resume() {
             description={item.description}
             companyName={item.companyName}
             date={item.date}
-            color={item.color}
           />
         ))}
       </div>
@@ -28,7 +27,6 @@ const information = [
       "I developed and maintained frontend and backend functionalities using Laravel and PHP, managed databases with MySQL, and implemented secure user authentication with Laravel Passport. Using the Blade templating engine, I created responsive and dynamic interfaces. I collaborated with teams to improve website performance and user experience while utilizing Git and GitHub for version control and project management.",
     companyName: "FlyGames, Turkey",
     date: "Aug 2022 - May 2023",
-    color: "success",
   },
   {
     id: 2,
@@ -37,7 +35,6 @@ const information = [
       "I developed kitchen appliance projects using C# for software solutions, maintained servers to ensure stability and security, and resolved hardware issues to enhance system performance and reduce downtime.",
     companyName: "Rubino, Iran",
     date: "Feb 2017 - Feb 2022",
-    color: "danger",
   },
 ];
 
@@ -46,7 +43,7 @@ function JobPosition({ jobPosition, description, companyName, date, color }) {
     <div className="job-container d-flex w-100 position-relative">
       <div className="left-shape position-relative">
         <div
-          className={`solid-circle bg-${color} rounded-circle position-absolute start-50 translate-middle`}
+          className={`solid-circle rounded-circle position-absolute start-50 translate-middle`}
         ></div>
         <div className="outline-circle rounded-circle border-dark border-2 position-absolute  start-50 translate-middle "></div>
         <div className="vertical-line position-absolute start-50 translate-middle"></div>

@@ -1,4 +1,5 @@
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { Link } from "react-scroll";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
@@ -20,33 +21,50 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link className="nav-link" to="home" smooth={true} duration={500}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link
+                className="nav-link"
+                to="about"
+                smooth={true}
+                duration={500}
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link
+                className="nav-link"
+                to="projects"
+                smooth={true}
+                duration={500}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
-                Contact ME
-              </a>
+              <Link
+                className="nav-link"
+                to="contact"
+                smooth={true}
+                duration={500}
+              >
+                Contact Me
+              </Link>
             </li>
           </ul>
           <form className="container-fulid justify-content-start">
-            <button
+            <a
+              href="/Portfolio-v2/Parisa_CV.pdf"
+              download="Parisa_CV.pdf"
               className="btn btn-sm btn-outline-success me-2"
               type="button"
             >
               Download CV
-            </button>
+            </a>
           </form>
         </div>
       </div>
