@@ -22,11 +22,25 @@ h2{
     letter-spacing: .05rem;
 }
 
+/************ CONTACT SECTION **********/
+
 .contact-section, .footer-section{
     background-color: #fff;
     padding: .1em;
 }
-    /************ BOOTSTRAP TAGS **********/
+
+.social-media-icon {
+    font-size: 3em;
+    color: #000000; /* Change this to the desired color */
+    transition: color 0.3s;
+  }
+  
+  .social-media-icon:hover {
+    color: #347949; /* Optional: Change the color when hovered */
+  }
+
+
+/************ BOOTSTRAP TAGS **********/
 
 .container{
     margin: 8em auto;

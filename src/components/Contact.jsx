@@ -1,31 +1,16 @@
-import instagramIcon from "../assets/icon/instagram_icon.png";
-import dribbbleIcon from "../assets/icon/dribbble_icon.png";
-import gmailIcon from "../assets/icon/gmail_icon.png";
-import linkedinIcon from "../assets/icon/linkedin_icon.png";
+import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 const information = [
   {
     id: 1,
-    title: "instagram",
-    icon: instagramIcon,
-    url: "http://www.instagram.com/parisa7422",
+    title: "github",
+    icon: <FaSquareGithub />,
+    url: "https://github.com/Parisa7422",
   },
   {
     id: 2,
     title: "linkedin",
-    icon: linkedinIcon,
+    icon: <FaLinkedin />,
     url: "http://www.linkedin.com/in/parisa-taheri-a6688a13b",
-  },
-  {
-    id: 3,
-    title: "gmail",
-    icon: gmailIcon,
-    url: "#",
-  },
-  {
-    id: 4,
-    title: "dribbble",
-    icon: dribbbleIcon,
-    url: "#",
   },
 ];
 
@@ -41,8 +26,8 @@ function Contact() {
         <div className="social-media-container d-flex justify-content-center">
           <ul className="d-flex p-2">
             {information.map((item) => (
-              <a key={item.id} href={item.url}>
-                <img src={item.icon} style={{ width: "70%" }} />
+              <a key={item.id} href={item.url} className="social-media-icon">
+                {item.icon}
               </a>
             ))}
           </ul>
