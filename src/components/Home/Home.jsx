@@ -20,9 +20,7 @@ function Home() {
           />
         </div>
         <div className="homepage-header__description">
-          <h6>
-            Designing with passion and purpose <br /> for impactful results.
-          </h6>
+          <h6>Passionate designer and fast learner</h6>
         </div>
       </div>
     </section>
